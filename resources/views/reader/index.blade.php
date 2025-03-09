@@ -28,7 +28,7 @@
                 ndef.onreading = event => {
                     const decoder = new TextDecoder();
                     for (const record of event.message.records) {
-                        document.getelementById("nfc_code").value = decoder.decode(record.data);
+                        document.getElementById("nfc_code").value = decoder.decode(record.data);
                     }
                 }
                 } catch(error) {
