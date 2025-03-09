@@ -43,7 +43,7 @@
             if ("NDEFReader" in window) {
                 const ndef = new NDEFReader();
                 try {
-                await ndef.write("Check out web.dev!");
+                await ndef.write("Check out web.dev! edit");
                 } catch(error) {
                 console.log(error);
                 }
